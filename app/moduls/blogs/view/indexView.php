@@ -8,7 +8,10 @@
         <?php foreach($data['blogs'] as $blogs){ ?>
         <div class="col-lg-4 mb-4">
             <div class="card mb-2 p-3">
-                <img style="height: 200px;" class="card-img-top" src="../../../public/images/blogs/<?php echo $blogs['blogs_file'] ?>" alt="<?php echo $blogs['blogs_title'] ?>">
+                <a href="blogs/<?php echo $blogs['blogs_slug'] ?>">
+                    <img style="height: 200px;" class="card-img-top" src="../../../public/images/blogs/<?php echo $blogs['blogs_file'] ?>" alt="<?php echo $blogs['blogs_title'] ?>">
+                </a>
+
                 <div class="card-body bg-secondary d-flex align-items-center p-0">
                     <h6 class="card-title text-white text-truncate m-0 ml-3"><?php echo $blogs['blogs_title'] ?></h6>
                     <a href="blogs/<?php echo $blogs['blogs_slug'] ?>"
