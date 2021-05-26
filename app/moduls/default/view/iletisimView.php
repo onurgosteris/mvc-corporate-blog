@@ -19,7 +19,7 @@
                     }
                     ?>
                 </div>
-                <form action="<?php echo URL; ?>iletisim/messageSend" method="POST" novalidate="novalidate">
+                <form action="<?php echo URL; ?>/iletisim/messageSend" method="POST" novalidate="novalidate">
 
                     <div class="control-group">
                         <input type="text" class="form-control" name="messages_namesurname" id="name"

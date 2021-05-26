@@ -119,7 +119,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="https://<?php echo $_SERVER['SERVER_NAME']; ?>">
+                    <a href="<?php echo URL; ?>">
                         <i class="material-icons">link</i>
                         <span>Siteye Git</span>
                     </a>

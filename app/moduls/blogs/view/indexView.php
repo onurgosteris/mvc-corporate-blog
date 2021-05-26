@@ -30,17 +30,17 @@
             <nav aria-label="Page navigation">
                 <ul class="pagination justify-content-center mb-4">
                     <li class="page-item ">
-                        <a class="page-link" href="http://<?php echo URL; ?>blogs/sayfa/1" aria-label="Previous">
+                        <a class="page-link" href="<?php echo URL; ?>/blogs/sayfa/1" aria-label="Previous">
                             <span aria-hidden="true">&laquo;</span>
                             <span class="sr-only">İlk Sayfa</span>
                         </a>
                     </li>
                     <?php $sayfa_sayisi = ceil($data['blogs_toplam_icerik']/9);
                     for($i=1;$i<=$sayfa_sayisi;$i++){?>
-                    <li class="page-item"><a class="page-link" href="http://<?php echo URL; ?>blogs/sayfa/<?php echo $i; ?>"><?php echo $i ?></a></li>
+                    <li class="page-item"><a class="page-link" href="<?php echo URL; ?>/blogs/sayfa/<?php echo $i; ?>"><?php echo $i ?></a></li>
                     <?php } ?>
                     <li class="page-item">
-                        <a class="page-link" href="http://<?php echo URL; ?>blogs/sayfa/<?php echo $sayfa_sayisi; ?>" aria-label="Next">
+                        <a class="page-link" href="<?php echo URL; ?>/blogs/sayfa/<?php echo $sayfa_sayisi; ?>" aria-label="Next">
                             <span aria-hidden="true">&raquo;</span>
                             <span class="sr-only">Son Sayfa</span>
                         </a>
